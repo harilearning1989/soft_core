@@ -20,3 +20,11 @@ Optional: If you want to use Bootstrap’s JS components, also add this to scrip
 "scripts": [
   "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
 ]
+
+ng g c components/header
+ng g c components/home
+ng g c components/about
+ng g c components/contact
+ng g c components/footer
+ng g c components/not-found 
+

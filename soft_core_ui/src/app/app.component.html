@@ -1,13 +1,13 @@
 
-<div class="container mt-5">
-  <div class="card">
-    <div class="card-header bg-primary text-white">
-      Welcome to My Bootstrap Angular App
-    </div>
-    <div class="card-body">
-      <p class="card-text">This app uses Bootstrap 5 for styling!</p>
-      <button class="btn btn-success">Click Me</button>
-    </div>
+<div class="app-container">
+  <!-- Header Component -->
+  <app-header></app-header>
+
+  <!-- Main Content Area (Routing goes here) -->
+  <div class="content">
+    <router-outlet></router-outlet>
   </div>
+
+  <!-- Footer Component -->
+  <app-footer></app-footer>
 </div>
-<router-outlet />
