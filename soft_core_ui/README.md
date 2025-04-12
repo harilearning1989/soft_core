@@ -5,3 +5,5 @@ Angular CLI: npm install -g @angular/cli
 sudo ng new soft_core_ui
 
 ng serve
+
+sudo npm install bootstrap
