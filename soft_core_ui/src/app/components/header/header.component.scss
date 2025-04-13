@@ -2,3 +2,9 @@
 .bg-light-grey {
   background-color: darkgrey; /* Light grey background */
 }
+
+.nav-link.active {
+  background-color: #0d6efd; /* Bootstrap primary */
+  color: #fff !important;
+  border-radius: 5px;
+}

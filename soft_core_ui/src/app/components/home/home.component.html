@@ -1,11 +1,50 @@
-<div class="container mt-5">
-  <div class="card">
-    <div class="card-header bg-primary text-white">
-      Welcome to My Bootstrap Angular App
+<div class="home-container">
+  <h1 class="text-center">Welcome to Our Software Solutions</h1>
+
+  <p class="lead text-center">
+    We are a passionate team of software developers, ready to turn your ideas into powerful digital solutions.
+  </p>
+
+  <div class="section">
+    <h3>🔧 What We Do</h3>
+    <ul>
+      <li>💻 Develop custom software tailored to your business needs</li>
+      <li>🔄 Modify and enhance existing applications</li>
+      <li>📱 Build responsive websites and user-friendly mobile apps</li>
+      <li>🎓 Provide training and internship opportunities</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>🚀 Projects We've Delivered</h3>
+    <ul>
+      <li>📚 Library Management System</li>
+      <li>🏥 Hospital Management System</li>
+      <li>🛍️ Pharmacy Management</li>
+      <li>📅 Appointment Scheduling Platform</li>
+      <li>🔒 Secure Login & Role-Based Access</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>👨‍💻 Our Experienced Developers</h3>
+    <div class="dev-scroll-wrapper">
+      <div class="dev-cards">
+        <div class="card" *ngFor="let dev of developers">
+          <img [src]="dev.photo" alt="{{dev.name}}" class="dev-img" />
+          <div class="card-body">
+            <h5 class="card-title">{{ dev.name }}</h5>
+            <p class="card-text">{{ dev.role }}</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="card-body">
-      <p class="card-text">This app uses Bootstrap 5 for styling!</p>
-      <button class="btn btn-success">Click Me</button>
-    </div>
+  </div>
+
+  <div class="section text-center">
+    <p class="contact-prompt">
+      Ready to build your next app with us? <br />
+      <a routerLink="/contact" class="btn btn-primary mt-3">Contact Us</a>
+    </p>
   </div>
 </div>

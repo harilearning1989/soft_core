@@ -13,10 +13,21 @@
   text-align: center;
 }
 
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header and Footer stay fixed height */
+app-header, app-footer {
+  flex-shrink: 0;
+}
+
 /* Style for the content */
 .content {
-  flex: 1; /* This will make the content area flexible and take up remaining space */
-  padding: 20px;
+  flex-grow: 1;
+  overflow-y: auto;
 }
 
 /* Style for the footer */
