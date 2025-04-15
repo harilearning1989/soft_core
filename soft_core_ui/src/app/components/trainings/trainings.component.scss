@@ -1,0 +1,11 @@
+.training-section {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card:hover {
+  background-color: #dddddd;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}

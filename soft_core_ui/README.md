@@ -26,5 +26,11 @@ ng g c components/home
 ng g c components/about
 ng g c components/contact
 ng g c components/footer
-ng g c components/not-found 
+ng g c components/services
+ng g c components/projects
+ng g c components/developers
+ng g c components/trainings
+ng g c components/internships
+ng g c components/not-found
+
 

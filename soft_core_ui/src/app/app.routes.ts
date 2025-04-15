@@ -18,6 +18,31 @@ export const routes: Routes = [
       import('./components/contact/contact.component').then((m) => m.ContactComponent),
   },
   {
+    path: 'services',
+    loadComponent: () =>
+      import('./components/services/services.component').then((m) => m.ServicesComponent),
+  },
+  {
+    path: 'projects',
+    loadComponent: () =>
+      import('./components/projects/projects.component').then((m) => m.ProjectsComponent),
+  },
+  {
+    path: 'developers',
+    loadComponent: () =>
+      import('./components/developers/developers.component').then((m) => m.DevelopersComponent),
+  },
+  {
+    path: 'internships',
+    loadComponent: () =>
+      import('./components/internships/internships.component').then((m) => m.InternshipsComponent),
+  },
+  {
+    path: 'trainings',
+    loadComponent: () =>
+      import('./components/trainings/trainings.component').then((m) => m.TrainingsComponent),
+  },
+  {
     path: '**',
     loadComponent: () =>
       import('./components/not-found/not-found.component').then((m) => m.NotFoundComponent),

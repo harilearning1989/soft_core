@@ -1,6 +1,17 @@
 .contact-form {
-  background-color: darkgrey; /* Light gray */
+  background-color: white; /* Light gray */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for depth */
 }
+
+.contact-section {
+  max-width: 600px;
+  margin: auto;
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border-color: red;
+}
+

@@ -1,0 +1,25 @@
+.card {
+  border-left: 4px solid #0d6efd;
+  border-radius: 10px;
+}
+
+h2 {
+  font-style: italic;
+}
+
+.card-title {
+  font-weight: 600;
+  color: #0d6efd;
+}
+
+.training-section {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card:hover {
+  background-color: #dddddd;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}

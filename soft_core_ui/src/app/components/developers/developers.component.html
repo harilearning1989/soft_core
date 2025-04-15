@@ -1,0 +1,17 @@
+<div class="container mt-4">
+  <h2 class="text-center mb-4 text-italic">Our Developers</h2>
+
+  <div class="developer-scroll d-flex gap-3 pb-3">
+    <div *ngFor="let dev of developers" class="card flex-shrink-0 shadow" style="width: 250px;">
+      <img [src]="dev.photo" class="card-img-top" alt="Developer Photo">
+      <div class="card-body text-center">
+        <h5 class="card-title">{{ dev.name }}</h5>
+        <p class="card-text mb-1"><strong>{{ dev.role }}</strong></p>
+        <p class="card-text text-muted">{{ dev.experience }} Experience</p>
+        <p class="card-text small">
+          <strong>Skills:</strong> {{ dev.skills.join(', ') }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
