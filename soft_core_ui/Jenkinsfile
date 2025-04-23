@@ -1,0 +1,50 @@
+pipeline {
+    agent any
+
+    environment {
+        VPS_USER = 'your_vps_username'
+        VPS_HOST = 'your.vps.server.com'
+        DEPLOY_PATH = '/var/www/html' // VPS path where Nginx serves files
+        BUILD_DIR = 'dist/your-app-name'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/your-org/your-angular-app.git'
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                sh 'npm install'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh 'ng build --configuration=production'
+            }
+        }
+
+        stage('Deploy to VPS') {
+            steps {
+                withCredentials([sshUserPrivateKey(credentialsId: 'vps-ssh-key', keyFileVariable: 'SSH_KEY')]) {
+                    // Copy files to VPS
+                    sh """
+                        scp -r -i $SSH_KEY -o StrictHostKeyChecking=no ${BUILD_DIR}/* ${VPS_USER}@${VPS_HOST}:${DEPLOY_PATH}
+                    """
+                }
+            }
+        }
+    }
+
+    post {
+        success {
+            echo "✅ Deployed to VPS at http://${VPS_HOST}/"
+        }
+        failure {
+            echo '❌ Deployment failed'
+        }
+    }
+}

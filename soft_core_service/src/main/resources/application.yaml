@@ -2,6 +2,14 @@ spring:
   application:
     name: SoftCore
   main:
-    banner-mode: off
+    banner-mode: log
+  profiles:
+    active: dev
 server:
   port: 8081
+
+logging:
+  file:
+    path: logs
+  level:
+    root: info
