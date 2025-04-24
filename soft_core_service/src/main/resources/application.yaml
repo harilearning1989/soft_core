@@ -5,6 +5,10 @@ spring:
     banner-mode: log
   profiles:
     active: dev
+  messages:
+    basename: messages
+    encoding: UTF-8
+
 server:
   port: 8081
 

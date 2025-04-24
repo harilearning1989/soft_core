@@ -1,12 +1,15 @@
 package com.web.soft.controls;
 
+import com.web.soft.records.Contact;
 import com.web.soft.response.GlobalResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -60,6 +63,11 @@ public class HomeRestController {
     public String getAllInternships(@Parameter(description = "ID of the employee to be fetched") @RequestParam Long id) {
         // Your logic to fetch the employee by ID
         return "";
+    }
+
+    @PostMapping("saveContact")
+    public ResponseEntity<String> createUser(@Valid @RequestBody Contact contact) {
+        return ResponseEntity.ok("User created with name: " + contact.name());
     }
 
    /* @PostMapping("schedule")

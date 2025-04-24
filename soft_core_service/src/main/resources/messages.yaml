@@ -1,0 +1,8 @@
+name:
+  notnull: Name must not be null
+  size: Name must be between 4 and 20 characters
+  pattern: Name must contain only upper and lowercase letters
+
+phone:
+  notnull: Phone number must not be null
+  pattern: Phone number must be exactly 10 digits
