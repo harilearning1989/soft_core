@@ -1,0 +1,90 @@
+2025-04-25 12:41:52 [restartedMain] INFO  o.s.boot.SpringApplication - 
+
+  ____   ___  ____  _____
+ / ___| / _ \| ___||_   _|
+ \___ \| | | | |__   | |
+  ___) | |_| | |     | |
+ |____/ \___/| |     |_|
+
+
+2025-04-25 12:41:52 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-04-25 12:41:52 [restartedMain] INFO  com.web.soft.SoftCoreApplication - Starting SoftCoreApplication using Java 20.0.2 with PID 1168 (/Users/hariduddukunta/MyWork/Workspace/GitHub/soft_core/soft_core_service/build/classes/java/main started by hariduddukunta in /Users/hariduddukunta/MyWork/Workspace/GitHub/soft_core/soft_core_service)
+2025-04-25 12:41:52 [restartedMain] INFO  com.web.soft.SoftCoreApplication - The following 1 profile is active: "dev"
+2025-04-25 12:41:53 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-25 12:41:53 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-25 12:41:53 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-04-25 12:41:53 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-04-25 12:41:53 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-25 12:41:53 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-25 12:41:53 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-25 12:41:53 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 801 ms
+2025-04-25 12:41:54 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-25 12:41:54 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-04-25 12:41:54 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-04-25 12:41:54 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-04-25 12:41:54 [restartedMain] INFO  com.web.soft.SoftCoreApplication - Started SoftCoreApplication in 1.746 seconds (process running for 2.835)
+2025-04-25 12:41:54 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-25 12:41:54 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-25 12:41:54 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-04-25 12:41:58 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-25 12:41:58 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-25 12:45:08 [restartedMain] INFO  o.s.boot.SpringApplication - 
+
+  ____   ___  ____  _____
+ / ___| / _ \| ___||_   _|
+ \___ \| | | | |__   | |
+  ___) | |_| | |     | |
+ |____/ \___/| |     |_|
+
+
+2025-04-25 12:45:08 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-04-25 12:45:08 [restartedMain] INFO  com.web.soft.SoftCoreApplication - Starting SoftCoreApplication using Java 20.0.2 with PID 1255 (/Users/hariduddukunta/MyWork/Workspace/GitHub/soft_core/soft_core_service/build/classes/java/main started by hariduddukunta in /Users/hariduddukunta/MyWork/Workspace/GitHub/soft_core/soft_core_service)
+2025-04-25 12:45:08 [restartedMain] INFO  com.web.soft.SoftCoreApplication - The following 1 profile is active: "dev"
+2025-04-25 12:45:08 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-25 12:45:08 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-25 12:45:09 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-04-25 12:45:09 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-04-25 12:45:09 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-25 12:45:09 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-25 12:45:09 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-25 12:45:09 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 718 ms
+2025-04-25 12:45:09 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-25 12:45:09 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-04-25 12:45:09 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-04-25 12:45:09 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-04-25 12:45:09 [restartedMain] INFO  com.web.soft.SoftCoreApplication - Started SoftCoreApplication in 1.502 seconds (process running for 2.064)
+2025-04-25 12:45:10 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-25 12:45:10 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-25 12:45:10 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-25 12:45:22 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-25 12:45:22 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-25 12:45:25 [restartedMain] INFO  o.s.boot.SpringApplication - 
+
+  ____   ___  ____  _____
+ / ___| / _ \| ___||_   _|
+ \___ \| | | | |__   | |
+  ___) | |_| | |     | |
+ |____/ \___/| |     |_|
+
+
+2025-04-25 12:45:25 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-04-25 12:45:25 [restartedMain] INFO  com.web.soft.SoftCoreApplication - Starting SoftCoreApplication using Java 20.0.2 with PID 1270 (/Users/hariduddukunta/MyWork/Workspace/GitHub/soft_core/soft_core_service/build/classes/java/main started by hariduddukunta in /Users/hariduddukunta/MyWork/Workspace/GitHub/soft_core/soft_core_service)
+2025-04-25 12:45:25 [restartedMain] INFO  com.web.soft.SoftCoreApplication - The following 1 profile is active: "dev"
+2025-04-25 12:45:25 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-25 12:45:25 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-25 12:45:25 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-04-25 12:45:25 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-04-25 12:45:25 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-25 12:45:25 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-25 12:45:25 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-25 12:45:25 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 658 ms
+2025-04-25 12:45:26 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-25 12:45:26 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-04-25 12:45:26 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-04-25 12:45:26 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-04-25 12:45:26 [restartedMain] INFO  com.web.soft.SoftCoreApplication - Started SoftCoreApplication in 1.394 seconds (process running for 1.94)
+2025-04-25 12:45:26 [RMI TCP Connection(1)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-25 12:45:26 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-25 12:45:26 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-25 12:45:31 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-25 12:45:31 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
