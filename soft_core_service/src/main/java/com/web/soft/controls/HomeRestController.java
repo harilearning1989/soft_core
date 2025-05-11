@@ -2,9 +2,7 @@ package com.web.soft.controls;
 
 import com.web.soft.constants.CommonConstants;
 import com.web.soft.records.Contact;
-import com.web.soft.response.GlobalResponse;
-import com.web.soft.response.ResponseHandler;
-import com.web.soft.response.ServiceDTO;
+import com.web.soft.response.*;
 import com.web.soft.services.DeveloperService;
 import com.web.soft.services.ProjectService;
 import com.web.soft.services.ServicesService;
@@ -53,9 +51,11 @@ public class HomeRestController {
             @ApiResponse(responseCode = "404", description = "Employee not found")
     })
     @GetMapping("/developers")
-    public String getAllAvailableDevelopers(@Parameter(description = "ID of the employee to be fetched") @RequestParam Long id) {
-        // Your logic to fetch the employee by ID
-        return "";
+    public GlobalResponse getAllAvailableDevelopers() {
+        List<DeveloperDTO> developerDTOS = developerService.getAllAvailableDevelopers();
+
+        return ResponseHandler.generateResponse(
+                String.format(CommonConstants.SERVICES_SUCCESS), HttpStatus.OK, developerDTOS);
     }
 
     @Operation(summary = "Get All Services", description = "Fetches all the services")
@@ -71,16 +71,25 @@ public class HomeRestController {
                 String.format(CommonConstants.SERVICES_SUCCESS), HttpStatus.OK, serviceDTOList);
     }
 
+    @Operation(summary = "Get All Projects", description = "Fetches all the Projects")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Successfully retrieved Projects"),
+            @ApiResponse(responseCode = "404", description = "Projects are not found")
+    })
     @GetMapping("/projects")
-    public String getDevelopedProjects(@Parameter(description = "ID of the employee to be fetched") @RequestParam Long id) {
-        // Your logic to fetch the employee by ID
-        return "";
+    public GlobalResponse getAllProjects() {
+        List<ProjectsDTO> projectsDTOList = projectsService.getAllProjectsDTOs();
+
+        return ResponseHandler.generateResponse(
+                String.format(CommonConstants.SERVICES_SUCCESS), HttpStatus.OK, projectsDTOList);
     }
 
     @GetMapping("/trainings")
-    public String getAvailableTrainings(@Parameter(description = "ID of the employee to be fetched") @RequestParam Long id) {
-        // Your logic to fetch the employee by ID
-        return "";
+    public GlobalResponse getAvailableTrainings() {
+        List<Trainings> projectsDTOList = projectsService.getAllProjectsDTOs();
+
+        return ResponseHandler.generateResponse(
+                String.format(CommonConstants.SERVICES_SUCCESS), HttpStatus.OK, projectsDTOList);
     }
 
     @GetMapping("/internships")

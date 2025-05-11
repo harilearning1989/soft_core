@@ -2,3 +2,15 @@ spring:
   config:
     activate:
       on-profile: dev
+  datasource:
+    url: jdbc:postgresql://192.168.64.6:5432/postgres
+    username: postgres
+    password: dudkrish1A
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+  sql:
+    init:
+      mode: never  # disable automatic schema/data loading (to avoid init errors)

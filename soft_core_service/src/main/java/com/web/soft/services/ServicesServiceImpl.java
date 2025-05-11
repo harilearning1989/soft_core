@@ -1,7 +1,6 @@
 package com.web.soft.services;
 
-import com.web.soft.mappers.ServiceMapper;
-import com.web.soft.models.Services;
+import com.web.soft.mappers.SoftCoreMapper;
 import com.web.soft.repos.ServiceRepository;
 import com.web.soft.response.ServiceDTO;
 import org.springframework.stereotype.Service;
@@ -20,7 +19,7 @@ public class ServicesServiceImpl implements ServicesService {
 
     public List<ServiceDTO> getAllServiceDTOs() {
         return serviceRepository.findAll().stream()
-                .map(ServiceMapper::toDto)
+                .map(SoftCoreMapper::toDto)
                 .collect(Collectors.toList());
     }
 
